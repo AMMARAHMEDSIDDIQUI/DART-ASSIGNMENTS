@@ -1,0 +1,152 @@
+Q.1: Create two integer variables length and breadth and assign values then check if they are square values or rectangle values
+void main() {
+  int length = 5;
+  int breadth = 5;
+
+  if (length == breadth) {
+    print("It's a square.");
+  } else {
+    print("It's a rectangle.");
+  }
+}
+Q.2: Take two variables and store age then using if/else condition to determine oldest and youngest among them.
+  void main() {
+  int age1 = 25;
+  int age2 = 30;
+
+  if (age1 > age2) {
+    print("Age 1 is the oldest.");
+    print("Age 2 is the youngest.");
+  } else if (age1 < age2) {
+    print("Age 2 is the oldest.");
+    print("Age 1 is the youngest.");
+  } else {
+    print("Both ages are equal.");
+  }
+}
+
+q3:A student will not be allowed to sit in exam if his/her attendance is less than 75%. Create integer variables and assign value:
+Number of classes held = 16,
+Number of classes attended = 10,
+and print percentage of class attended.
+Is student is allowed to sit in exam or not?
+
+
+void main() {
+ var  classesHeld=16;
+  var classesAttended =8;
+  
+ var attendance  = (classesAttended/classesHeld)*100;
+  if(attendance>=75)
+  {
+    print("The student is  allowed to sit in the exam.");
+  }  
+  else
+  {
+    print("The student is not allowed to sit in the exam.");
+  }
+}
+Q.4: Create integer variable assign any year to it and check if a year is leap year or not.
+If a year is divisible by 4 then it is leap year but if the year is century year like 2000, 1900, 2100 then it must be divisible by 400.
+i.e: Use % ( modulus ) operator.
+void main() {
+  int year = 2024; // Example year
+
+  bool isDivisibleBy4 = year % 4 == 0;
+  bool isDivisibleBy100 = year % 100 == 0;
+  bool isDivisibleBy400 = year % 400 == 0;
+
+  bool isLeapYear = isDivisibleBy4 && (!isDivisibleBy100 || isDivisibleBy400);
+
+  if (isLeapYear) {
+    print('$year is a leap year.');
+  } else {
+    print('$year is not a leap year.');
+  }
+}
+
+Q.5  Write a program to read temperature in centigrade and display a suitable message according to temperature:
+You have num variable temperature = 42;
+Now print the message according to temperature:
+temp < 0 then Freezing weather
+temp 0-10 then Very Cold weather
+temp 10-20 then Cold weather
+temp 20-30 then Normal in Temp
+temp 30-40 then Its Hot
+temp >=40 then Its Very Hot
+
+void main() {
+  var temperature=42;
+  if (temperature< 0 ) 
+  {
+    print("its a Freezing weather");
+  }
+  else if ( temperature >=0 && temperature<= 10 ) 
+  {
+    print("its a very cold weather");
+  }
+  else if ( temperature >=10 && temperature<= 20 ) 
+  {
+    print("its a cold weather");
+  }
+  else if ( temperature >=20 && temperature<= 30 ) 
+  {
+    print("its a normal weather");
+  }
+  else if ( temperature >=30 && temperature<= 40 ) 
+  {
+    print("its a hot weather");
+  }
+  else  
+  {
+    print("its a very hot weather");
+  }
+}
+
+Q.6: Write a program to check whether an alphabet is a vowel or consonant.
+void main() {
+  var alphabet='l';
+  if (alphabet=='a' ) 
+  {
+    print("its a vowel");
+  }
+  else if ( alphabet=='e') 
+  {
+    print("its a vowel");
+  }
+  else if (alphabet=='i' ) 
+  {
+    print("its a vowel");
+  }
+  else if (alphabet=='o' ) 
+  {
+    print("its a vowel");
+  }
+  else if ( alphabet=='u' ) 
+  {
+    print("its a vowel");
+  }
+  else  
+  {
+    print("its a consonant");
+  }
+}
+Q.7: Q8: Q9????
+Q10: Write a program that takes three numbers from the user and prints the greatest number & lowest number.
+void main() {
+  int x =9;
+  int y=8;
+  print("x is the  greatest number and y is the  lowest number.");
+}
+
+Q11: Write a program to calculate root of any number.
+Q12: Write a program to convert Celsius  to Fahrenheit   .
+
+void main() {
+  int celsius =52   ;
+  double fahrenheit = (celsius * 9/5) + 32;
+  print("the temperature in fahrenheit  is :$fahrenheit" );
+  
+  }
+
+
